@@ -3,7 +3,7 @@
 const minValue = 1;
 const maxValue = 5;
 const randNumber = minValue + Math.floor(Math.random() * (maxValue - minValue + 1));
-let userNum = parseInt(prompt('Введіть  число'));
+let userNum = parseInt(prompt('Введіть число від 1 до 5'));
 
 if (userNum === randNumber)
   alert(`Ви вгадали ${randNumber} === ${userNum}`);

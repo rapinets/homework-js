@@ -32,3 +32,6 @@ switch (curentMonth) {
 }
 
 alert(res);
+
+
+

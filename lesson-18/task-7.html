@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 18</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="style-18.css">
+  <script src="./js/task-7.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="main__container">
+        <h1 class="task__title">Задача 7</h1>
+        <p class="task__info">
+          Подорож складається з 3 етапів. На кожному етапі користувач може вибрати один з видів транспорту (авто,
+          автобус, літак - випадаючий список), харчування (сніданок, обід, вечеря – checkbоx) та одного з 3-х
+          гідів(використати - radio buttons). Ціни визначте самі. Підрахувати загальну вартість.
+        </p>
+        <section class="travel travel--mb-2">
+          <h2 class="travel__sub-title">Trvel List</h2>
+          <ul class="travel__cards">
+            <li>
+              <article class="travel__card card-travel">
+                <h3 class="card-travel__subtitle">Stage 1</h3>
+                <div class="card-travel__transport">
+                  <label>
+                    <h4>Mode of transport</h4>
+                    <select>
+                      <option selected value="300">Auto</option>
+                      <option value="100">Bus</option>
+                      <option value="1500">Airplane</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="card-travel__feeding">
+                  <h4>Feeding</h4>
+                  <label>
+                    <input type="checkbox" value="100" />
+                    <span>Breakfast</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" value="200" />
+                    <span>Dinner</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" value="150" />
+                    <span>Supper</span>
+                  </label>
+                </div>
+                <div class="card-travel__guide">
+                  <h4>Guide</h4>
+                  <label>
+                    <input type="radio" value="1000" />
+                    <span>Bohdan</span>
+                  </label>
+                  <label>
+                    <input type="radio" value="2000" />
+                    <span>Dima</span>
+                  </label>
+                  <label>
+                    <input type="radio" value="1500" />
+                    <span>Sveta</span>
+                  </label>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="travel__card card-travel">
+                <h3 class="card-travel__subtitle">Stage 2</h3>
+                <div class="card-travel__transport">
+                  <label>
+                    <span>Mode of transport</span>
+                    <select>
+                      <option selected value="200">Auto</option>
+                      <option value="100">Bus</option>
+                      <option value="1000">Airplane</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="card-travel__feeding">
+                  <h4>Feeding</h4>
+                  <label>
+                    <input type="checkbox" value="120" />
+                    <span>Breakfast</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" value="250" />
+                    <span>Dinner</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" value="150" />
+                    <span>Supper</span>
+                  </label>
+                </div>
+                <div class="card-travel__guide">
+                  <h4>Guide</h4>
+                  <label>
+                    <input type="radio" value="1000" />
+                    <span>Bohdan</span>
+                  </label>
+                  <label>
+                    <input type="radio" value="2500" />
+                    <span>David</span>
+                  </label>
+                  <label>
+                    <input type="radio" value="1000" />
+                    <span>Slava</span>
+                  </label>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="travel__card card-travel">
+                <h3 class="card-travel__subtitle">Stage 3</h3>
+                <div class="card-travel__transport">
+                  <label>
+                    <span>Mode of transport</span>
+                    <select>
+                      <option selected value="350">Auto</option>
+                      <option value="150">Bus</option>
+                      <option value="1600">Airplane</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="card-travel__feeding">
+                  <h4>Feeding</h4>
+                  <label>
+                    <input type="checkbox" value="150" />
+                    <span>Breakfast</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" value="300" />
+                    <span>Dinner</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" value="250" />
+                    <span>Supper</span>
+                  </label>
+                </div>
+                <div class="card-travel__guide">
+                  <h4>Guide</h4>
+                  <label>
+                    <input type="radio" value="1500" />
+                    <span>Bohdan</span>
+                  </label>
+                  <label>
+                    <input type="radio" value="2100" />
+                    <span>Dima</span>
+                  </label>
+                  <label>
+                    <input type="radio" value="1800" />
+                    <span>Sveta</span>
+                  </label>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="travel__total-sum">
+            <p class="travel__result"><button id="total-sum">Total sum -</button> <span></span></p>
+          </div>
+        </section>
+
+        <a href="./index.html" class="link">
+          <img src="../img/left-arrow-icon.svg" alt="Icon left">
+          <span>Назад</span>
+        </a>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

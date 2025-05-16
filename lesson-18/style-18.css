@@ -1,0 +1,257 @@
+.calculator,
+.convert,
+.user-years,
+.wish,
+.price-number {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.convert,
+.price-number {
+  max-width: 45%;
+}
+
+.wish {
+  padding: 1rem;
+  flex-direction: row;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.calculator__body,
+.convert__body,
+.user-years__body,
+.price-number__header,
+.price-number__body,
+.price-number__footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.calculator__body::after,
+.convert__body::after,
+.user-years__body::after,
+.price-number__header::after,
+.price-number__body::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.calculator__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.62rem;
+}
+
+.calculator__inputs label,
+.convert__inputs label,
+.price-number__header label {
+  display: flex;
+  column-gap: 0.62rem;
+  justify-content: space-between;
+}
+
+.calculator__inputs label input,
+.convert__inputs label input,
+.user-years__inputs label input,
+.price-number__header label input {
+  flex-basis: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding-inline-start: 0.62rem;
+}
+
+.user-years__inputs label input {
+  flex-basis: auto;
+}
+
+.calculator__buttons {
+  display: flex;
+  column-gap: 3px;
+  justify-content: space-between;
+}
+
+.calculator__buttons button,
+.convert__buttons button,
+.user-years__buttons button,
+.wish__item,
+#get-table,
+#get-sum {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.62rem;
+  border-radius: 5px;
+  background: #e0e0e0;
+  background: linear-gradient(90deg, rgba(224, 224, 224, 1) 0%, rgba(207, 200, 200, 1) 50%, rgba(173, 173, 173, 1) 100%);
+}
+
+.convert__buttons button,
+.user-years__buttons button,
+.wish__item,
+#get-table,
+#get-sum {
+  width: fit-content;
+}
+
+.wish__item {
+  height: fit-content;
+  cursor: help;
+}
+
+.calculator__footer,
+.convert__footer,
+.user-years__footer {
+  padding: 1rem;
+}
+
+.convert__footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.62rem;
+}
+
+.calculator__footer label,
+.convert__footer label {
+  display: flex;
+  column-gap: 0.62rem;
+  justify-content: space-between;
+}
+
+.calculator__footer label input,
+.convert__footer label input {
+  flex-basis: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding-inline-start: 0.62rem;
+}
+
+.user-years__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.62rem;
+}
+
+.user-years__respond {
+  font-weight: bold;
+}
+
+.price-number__table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 0.62rem;
+}
+
+.price-number__table input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding-inline-start: 0.62rem;
+}
+
+.travel__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 14rem);
+  gap: 4rem;
+  justify-content: space-between;
+  margin-block-end: 1.5rem;
+}
+
+.card-travel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card-travel__subtitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-travel__subtitle::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.card-travel__transport label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.62rem;
+  justify-content: center;
+}
+
+.card-travel__transport label select {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.card-travel__feeding label,
+.card-travel__guide label {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-travel__feeding label input,
+.card-travel__guide label input {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.card-travel__transport,
+.card-travel__feeding,
+.card-travel__guide {
+  max-width: 12rem;
+}
+
+.card-travel__transport::after,
+.card-travel__feeding::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.travel__total-sum {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.travel__result {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (any-hover: hover) {
+
+  .convert__buttons button:hover,
+  .calculator__buttons button:hover,
+  .user-years__buttons button:hover,
+  #get-table:hover,
+  #get-sum:hover {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+
+  #total-sum:hover {
+    color: green;
+  }
+}

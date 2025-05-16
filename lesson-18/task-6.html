@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 18</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="style-18.css">
+  <script src="./js/task-6.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="main__container">
+        <h1 class="task__title">Задача 6</h1>
+        <p class="task__info">
+          Користувач задає кількість оцінок і натискає на кнопку «get table». В результаті формується таблиця з input,
+          куди користувач вводить оцінки. Після цього натискає на кнопку “get sum” і знаходить середнє значення.
+        </p>
+        <div class="price-number price-number--mb-2">
+          <div class="price-number__header">
+            <label>
+              <span>Price number</span>
+              <input id="price-number" type="number" placeholder="Enter price number here" value="0" />
+            </label>
+            <button id="get-table" onclick="generateTable()">Get table</button>
+          </div>
+          <div class="price-number__body">
+            <div class="price-number__table">
+
+            </div>
+          </div>
+          <div class="price-number__footer">
+            <button id="get-sum" onclick="calculateAvr()">Get average</button>
+            <p class="price-number__average">average = <span></span></p>
+          </div>
+        </div>
+
+        <a href="./index.html" class="link">
+          <img src="../img/left-arrow-icon.svg" alt="Icon left">
+          <span>Назад</span>
+        </a>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

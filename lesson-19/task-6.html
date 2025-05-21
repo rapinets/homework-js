@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 19</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="style-19.css">
+  <script defer src="./js/task-6.js"></script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="main__container">
+        <h1 class="task__title">Задача 6</h1>
+        <p class="task__info">
+          Дано список спортсменів. Потрібно сформувати список тих, які будуть брати участь у змаганні. При цьому є два
+          стовпці. В одному відображені всі спортсмени, в іншому – список тих, хто був вибраний. При натисканні на
+          зелену стрілку спортсмен переміщається у список для змагань. При натисканні на червону стрілку спортсмен
+          переміщається у загальний список.
+        </p>
+        <section class="lists lists--mb-2">
+          <div class="lists__general">
+            <h2 class="lists__sub-title">General list</h2>
+            <ul class="lists__items general-list">
+              <li class="general-list__item">
+                <span class="general-list__text">John Deere</span>
+                <button class="general-list__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512 463.95">
+                    <path fill-rule="nonzero"
+                      d="M512 332.66H268.5v92.31c-.68 15.47-5.77 26.46-15.43 32.82-25.79 17.2-52.31-5.26-69.24-22.6L14.33 261.6c-19.11-17.28-19.11-41.93 0-59.21L188.71 24.42c16.06-16.39 40.56-34.09 64.36-18.21 9.66 6.35 14.75 17.34 15.43 32.81v92.31H512v201.33z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="general-list__item">
+                <span class="general-list__text">Johnny Walker</span>
+                <button class="general-list__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512 463.95">
+                    <path fill-rule="nonzero"
+                      d="M512 332.66H268.5v92.31c-.68 15.47-5.77 26.46-15.43 32.82-25.79 17.2-52.31-5.26-69.24-22.6L14.33 261.6c-19.11-17.28-19.11-41.93 0-59.21L188.71 24.42c16.06-16.39 40.56-34.09 64.36-18.21 9.66 6.35 14.75 17.34 15.43 32.81v92.31H512v201.33z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="general-list__item">
+                <span class="general-list__text">Jack Deniels</span>
+                <button class="general-list__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512 463.95">
+                    <path fill-rule="nonzero"
+                      d="M512 332.66H268.5v92.31c-.68 15.47-5.77 26.46-15.43 32.82-25.79 17.2-52.31-5.26-69.24-22.6L14.33 261.6c-19.11-17.28-19.11-41.93 0-59.21L188.71 24.42c16.06-16.39 40.56-34.09 64.36-18.21 9.66 6.35 14.75 17.34 15.43 32.81v92.31H512v201.33z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="general-list__item">
+                <span class="general-list__text">Hankey Bannister</span>
+                <button class="general-list__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512 463.95">
+                    <path fill-rule="nonzero"
+                      d="M512 332.66H268.5v92.31c-.68 15.47-5.77 26.46-15.43 32.82-25.79 17.2-52.31-5.26-69.24-22.6L14.33 261.6c-19.11-17.28-19.11-41.93 0-59.21L188.71 24.42c16.06-16.39 40.56-34.09 64.36-18.21 9.66 6.35 14.75 17.34 15.43 32.81v92.31H512v201.33z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="general-list__item">
+                <span class="general-list__text">Jim Beam</span>
+                <button class="general-list__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512 463.95">
+                    <path fill-rule="nonzero"
+                      d="M512 332.66H268.5v92.31c-.68 15.47-5.77 26.46-15.43 32.82-25.79 17.2-52.31-5.26-69.24-22.6L14.33 261.6c-19.11-17.28-19.11-41.93 0-59.21L188.71 24.42c16.06-16.39 40.56-34.09 64.36-18.21 9.66 6.35 14.75 17.34 15.43 32.81v92.31H512v201.33z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="general-list__item">
+                <span class="general-list__text">Wiliam Peel</span>
+                <button class="general-list__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512 463.95">
+                    <path fill-rule="nonzero"
+                      d="M512 332.66H268.5v92.31c-.68 15.47-5.77 26.46-15.43 32.82-25.79 17.2-52.31-5.26-69.24-22.6L14.33 261.6c-19.11-17.28-19.11-41.93 0-59.21L188.71 24.42c16.06-16.39 40.56-34.09 64.36-18.21 9.66 6.35 14.75 17.34 15.43 32.81v92.31H512v201.33z" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="lists__chosen">
+            <h2 class="lists__sub-title">Chosen list</h2>
+            <ul class="lists__items chosen-list">
+
+            </ul>
+          </div>
+        </section>
+        <a href="./index.html" class="link">
+          <img src="../img/left-arrow-icon.svg" alt="Icon left">
+          <span>Назад</span>
+        </a>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

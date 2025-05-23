@@ -1,0 +1,43 @@
+.form-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 35%;
+}
+
+.search-container {
+  display: flex;
+  column-gap: 0.62rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 1.5rem;
+}
+
+.search-input {
+  border: 1px solid #000;
+  flex-basis: 65%;
+  padding: 0.25rem;
+}
+
+.search-label {
+  font-weight: bold;
+}
+
+.list-wrapper {
+  padding: 0.62rem;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.list-names {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.list-item {
+  padding: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}

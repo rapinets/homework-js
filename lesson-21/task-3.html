@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 21</title>
+  <link rel="stylesheet" href="../style/style.css">
+
+  <script defer src="./js/task-3.js"></script>
+  <style>
+    .section {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .house,
+    .dog,
+    .bird {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .dog {
+      z-index: 2;
+      aspect-ratio: 259 / 194;
+      max-height: 12.125rem;
+      /* 194/16 */
+    }
+
+    .bird {
+      z-index: 3;
+      aspect-ratio: 1;
+      max-height: 5rem;
+      /* 80/16 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="main__container">
+        <h1 class="task__title">Задача 3</h1>
+
+        <div class="section sectiom--mb-2"></div>
+        <a href="./index.html" class="link">
+          <img src="../img/left-arrow-icon.svg" alt="Icon left">
+          <span>Назад</span>
+        </a>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
